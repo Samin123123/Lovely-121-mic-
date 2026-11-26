@@ -1,4 +1,4 @@
-// WHATSAPP FREE MIC 🎤 background module.
+// WHATSAPP MIC 🎤 background module.
 // Local diagnostics only: no remote fetches, no webhooks, no token/session reads.
 
 const EXT = globalThis.browser ?? globalThis.chrome;
@@ -10,7 +10,7 @@ function reply(sendResponse, payload) {
 
 if (EXT?.runtime?.onInstalled) {
   EXT.runtime.onInstalled.addListener(() => {
-    console.log('[WHATSAPP FREE MIC 🎤] installed');
+    console.log('[WHATSAPP MIC 🎤] installed');
   });
 }
 
@@ -58,4 +58,4 @@ setInterval(() => {
   }
 }, 30000);
 
-console.log('[WHATSAPP FREE MIC 🎤] background service started');
+console.log('[WHATSAPPbMIC 🎤] background service started');
