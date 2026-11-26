@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "WHATSAPP FREE MIC 🎤",
+  "short_name": "WHATSAPP FREE MIC",
+  "version": "9.0.0",
+  "description": "FBX MUNNA microphone sound controls for WhatsApp Web.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "content/service.js",
+        "content/loader.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "core/injector.js"
+      ],
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "WHATSAPP FREE MIC 🎤",
+    "default_popup": "popup/popup.html"
+  }
+}
