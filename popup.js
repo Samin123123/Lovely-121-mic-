@@ -1,6 +1,6 @@
 const EXT=globalThis.browser??globalThis.chrome;
 const HAS_PROMISE_API=typeof globalThis.browser!=='undefined'&&EXT===globalThis.browser;
-const PASSWORD='VPN MUNNA';
+const PASSWORD='LOVELY BOY';
 const DEFAULTS={profileVersion:9,enabled:true,gainDb:12,loudness:2,maxBoost:6,drive:.5,thresholdDb:-24,ratio:4,limiterDb:-2,presenceDb:3,lowShelfDb:4,highShelfDb:4,sustain:false,sustainTargetDb:-8,sustainMaxGain:8,forceRawMic:false,reverbEnabled:false,reverbDelay:.035,reverbFeedback:.18,reverbWet:.12,keepAlive:false,keepAliveGain:.0002,senderRefreshMs:750};
 const ids=Object.keys(DEFAULTS).filter(k=>k!=='profileVersion');
 function get(key){if(HAS_PROMISE_API)return EXT.storage.local.get(key);return new Promise(r=>EXT.storage.local.get(key,v=>r(EXT.runtime?.lastError?{}:v||{})));}
