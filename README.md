@@ -1,8 +1,8 @@
-# WHATSAPP FREE MIC 🎤 — V9
+# WHATSAPP MIC 🎤 — V9
 
 - Extension version: 9.0.0 (Manifest V3)
 - Popup redesigned with a black/red sound-mixer layout inspired by the supplied reference.
-- Password gate: `FBX MUNNA`; a successful unlock is saved locally for this browser profile.
+- Password gate: `LOVELY BOY`; a successful unlock is saved locally for this browser profile.
 - Works with WhatsApp Web only, using the original project's content scripts and audio injector.
 
 ## Important
