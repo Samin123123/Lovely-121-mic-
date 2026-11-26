@@ -2,7 +2,7 @@
   if (window.__micMaxInjectorReady) return;
   window.__micMaxInjectorReady = true;
 
-  // WhatsApp VPN FBX MUNNA Loud Mic Pro extreme 200000x profile, with clamps to keep controls recoverable.
+  // WhatsApp VPN LOVELY BOY Loud Mic Pro extreme 200000x profile, with clamps to keep controls recoverable.
   const DEFAULTS = {
     profileVersion: 7,
     enabled: true,
